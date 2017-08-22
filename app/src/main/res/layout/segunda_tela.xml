@@ -76,32 +76,32 @@
         android:text="Senha" />
 
     <EditText
-        android:id="@+id/senha"
+        android:id="@+id/idsenha"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPassword" />
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/idrepetir"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Repetir Senha" />
 
     <EditText
-        android:id="@+id/repetSenha"
+        android:id="@+id/idrepetSenha"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPassword" />
 
     <Button
-        android:id="@+id/proximo"
+        android:id="@+id/idproximo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimary"
-        android:textColor="#FFFF"
         android:text="Proximo"
+        android:textColor="#FFFF"
 
         />
 

@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Home</string>
     <string name="wpp_helloworld">Olá amigos</string>
+    <string name="erro_senha">Senhas não conferem</string>
 </resources>
