@@ -30,7 +30,6 @@ public class SegundaTela extends AppCompatActivity {
 
         proximoVerif.setOnClickListener(
                 new View.OnClickListener() {
-
                     @Override
                     public void onClick(View v) {
                         String senha = senhaET.getText().toString();
@@ -41,11 +40,8 @@ public class SegundaTela extends AppCompatActivity {
                             Intent i = new Intent(SegundaTela.this, Terceira_tela.class);
                             startActivity(i);
                         }
-
                     }
-                }
-        );
-
+                });
 
     }
 }

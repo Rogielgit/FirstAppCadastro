@@ -15,9 +15,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SegundaTela">
 
-        </activity>
+        <activity android:name=".SegundaTela" />
+        <activity android:name=".Terceira_tela" />
+
     </application>
 
 </manifest>
