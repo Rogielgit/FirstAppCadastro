@@ -18,6 +18,7 @@ public class SegundaTela extends AppCompatActivity {
     Button proximoVerif;
     EditText senhaET;
     EditText senhaRepetida;
+    EditText nomePessoa;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +27,8 @@ public class SegundaTela extends AppCompatActivity {
         proximoVerif = (Button) findViewById(R.id.idproximo);
         senhaET = (EditText) findViewById(R.id.idsenha);
         senhaRepetida = (EditText) findViewById(R.id.idrepetSenha);
+
+        nomePessoa = (EditText) findViewById(R.id.nome);
 
 
         proximoVerif.setOnClickListener(
@@ -38,6 +41,7 @@ public class SegundaTela extends AppCompatActivity {
                             Toast.makeText(SegundaTela.this, getString(R.string.erro_senha), Toast.LENGTH_SHORT).show();
                         } else {
                             Intent i = new Intent(SegundaTela.this, Terceira_tela.class);
+                            i.putExtra("nomePessoa", nomePessoa.getText().toString());
                             startActivity(i);
                         }
                     }

@@ -1,5 +1,6 @@
 package helloworld.helloworld;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -7,6 +8,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 /**
  * Created by computeiro on 29/08/17.
@@ -31,6 +33,13 @@ public class Terceira_tela extends AppCompatActivity {
                 R.layout.lista_paises, R.id.pais, paises);
 
         lista_paises.setAdapter(adapter);
+
+         Intent i = getIntent();
+
+        String nomePessoa = i.getStringExtra("nomePessoa");
+
+        TextView textView = (TextView) findViewById(R.id.nomePessoa);
+        textView.setText(nomePessoa);
 
         lista_paises.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
